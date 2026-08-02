@@ -22,9 +22,11 @@ saveBtn.onclick = function(){
 
 // Open movie page
 document.getElementById("userProfile").onclick=function(){
-    window.location.href="movie.html";
+    localStorage.setItem("loggedIn","true");
+    window.location.href="index.html";
 };
 
 document.getElementById("guestProfile").onclick=function(){
-    window.location.href="movie.html";
+    localStorage.setItem("loggedIn","true");
+    window.location.href="index.html";
 };

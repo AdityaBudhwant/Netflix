@@ -13,6 +13,6 @@ function signup() {
 
     alert("Account Created Successfully!");
 
-    window.location.href = "intro.html";
+    window.location.href = "login.html";
 
 }
