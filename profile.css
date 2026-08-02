@@ -1,0 +1,27 @@
+body{
+    background:black;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+h1{
+    margin-top:40px;
+}
+
+.profiles{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
+}
+
+.profile img{
+    width:150px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.profile p{
+    font-size:20px;
+}

@@ -1,0 +1,122 @@
+V<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Movie</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header class="navbar">
+
+    <div class="logo">NETFLIX</div>
+
+    <div class="nav-right">
+        <a href="index.html" class="back-btn">⬅ Back</a>
+    </div>
+
+</header>
+
+<!-- Movie Banner -->
+
+<section class="movie-banner">
+
+    <img id="poster" src="" alt="Movie Poster">
+
+    <div class="movie-info">
+
+        <h1 id="title">Loading...</h1>
+
+        <h3 id="subtitle"></h3>
+
+        <p id="description"></p>
+
+        <div class="buttons">
+
+            <button id="playBtn">▶ Play Trailer</button>
+
+            <button id="listBtn">❤️ My List</button>
+
+        </div>
+
+    </div>
+
+    <div class="language-box">
+
+    <button onclick="changeLanguage('en')" class="lang-btn">
+        🇺🇸 English
+    </button>
+
+    <button onclick="changeLanguage('hi')" class="lang-btn">
+        🇮🇳 Hindi
+    </button>
+
+</div>
+
+</section>
+
+<!-- Trailer -->
+
+<section class="trailer-section">
+
+    <iframe
+        id="trailer"
+        width="100%"
+        height="500"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<!-- More Like This -->
+
+<section class="movies">
+
+    <h2>More Like This</h2>
+
+    <div class="movie-row">
+
+        <a href="movie.html?id=1">
+            <img src="images/images/movie1.jpeg" alt="Extraction">
+        </a>
+
+        <a href="movie.html?id=2">
+            <img src="images/images/movies2.jpeg" alt="Extraction 2">
+        </a>
+
+        <a href="movie.html?id=3">
+            <img src="images/images/movies3.jpeg" alt="Squid Game">
+        </a>
+
+        <a href="movie.html?id=4">
+            <img src="images/images/movies4.jpeg" alt="Wednesday">
+        </a>
+
+        <a href="movie.html?id=5">
+            <img src="images/images/movies5.jpeg" alt="Stranger Things">
+        </a>
+
+        <a href="movie.html?id=6">
+            <img src="images/images/movies6.jpeg" alt="The Adam Project">
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>© 2026 Netflix Clone | Created by Aditya Budhwant</p>
+
+</footer>
+
+<script src="movie.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    background:#141414;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:rgba(0,0,0,0.8);
+    padding:40px;
+    border-radius:10px;
+    width:320px;
+}
+
+.logo{
+    color:red;
+    text-align:center;
+}
+
+h2{
+    color:white;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+p{
+    color:white;
+}
+
+a{
+    color:red;
+}

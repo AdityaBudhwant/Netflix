@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+</div>
+
+<script>
+if(localStorage.getItem("loggedIn")!=="true"){
+    window.location.href="login.html";
+}
+</script>
+
+<header>
+
+   
+
+    <h3 id="username"></h3>
+
+    <div class="header-buttons">
+
+        <a href="mylist.html">
+            <button class="mylist-btn">My List</button>
+        </a>
+
+        <button id="logoutBtn">Logout</button>
+
+    </div>
+
+</header>
+
+<div class="search-container">
+
+    <input type="text" id="search"
+        placeholder="Search Movies...">
+        
+</div>
+
+<!-- HERO BANNER -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h3 id="heroSubtitle">
+            NETFLIX ORIGINAL
+        </h3>
+
+        <h1 id="heroTitle">
+            Extraction
+        </h1>
+
+        <p id="heroDescription">
+
+            Tyler Rake takes on the world's deadliest rescue mission.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <button id="heroPlay">
+                ▶ Play
+            </button>
+
+            <button id="heroInfo">
+                More Info
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Trending Now -->
+
+<section class="movies">
+
+<h2>🔥 Trending Now</h2>
+
+<button id="left-btn">◀</button>
+
+<div class="movie-row" id="movieRow">
+
+
+    <a href="movie.html?id=1">
+    <img src="images/images/movie1.jpeg" alt="Extraction">
+</a>
+
+<a href="movie.html?id=2">
+    <img src="images/images/movies2.jpeg" alt="Extraction 2">
+</a>
+
+<a href="movie.html?id=3">
+    <img src="images/images/movies3.jpeg" alt="Squid Game">
+</a>
+
+<a href="movie.html?id=4">
+    <img src="images/images/movies4.jpeg" alt="Wednesday">
+</a>
+
+<a href="movie.html?id=5">
+    <img src="images/images/movies5.jpeg" alt="Stranger Things">
+</a>
+
+<a href="movie.html?id=6">
+    <img src="images/images/movies6.jpeg" alt="The Adam Project">
+</a>
+
+<a href="movie.html?id=7">
+    <img src="images/images/movies7.jpeg" alt="The Gray Man">
+</a>
+
+<a href="movie.html?id=8">
+    <img src="images/images/movies8.jpeg" alt="Red Notice">
+</a>
+
+<a href="movie.html?id=9">
+    <img src="images/images/movies9.jpeg" alt="6 Underground">
+</a>
+
+<a href="movie.html?id=10">
+    <img src="images/images/movies10.jpeg" alt="Triple Frontier">
+</a>
+
+</div>
+
+<button id="right-btn">▶</button>
+
+</section>
+
+<!-- Continue Watching -->
+
+<section class="continue">
+
+    <h2>Continue Watching</h2>
+
+    <div id="continueRow" class="movie-row"></div>
+
+</section>
+
+<!-- Action Movies -->
+
+<section class="movies">
+
+<h2>🔥 Action Movies</h2>
+
+<div class="movie-row">
+
+<a href="movie.html?id=1"><img src="images/images/movie1.jpeg"></a>
+
+<a href="movie.html?id=2"><img src="images/images/movies2.jpeg"></a>
+
+<a href="movie.html?id=7"><img src="images/images/movies7.jpeg"></a>
+
+<a href="movie.html?id=8"><img src="images/images/movies8.jpeg"></a>
+
+<a href="movie.html?id=9"><img src="images/images/movies9.jpeg"></a>
+
+<a href="movie.html?id=10"><img src="images/images/movies10.jpeg"></a>
+
+</div>
+
+</section>
+
+<!-- Horror & Thriller -->
+
+<section class="movies">
+
+<h2>👻 Horror & Thriller</h2>
+
+<div class="movie-row">
+
+<a href="movie.html?id=11"><img src="images/images/movies11.jpeg" alt="The Old Guard"></a>
+
+<a href="movie.html?id=12"><img src="images/images/movies12.jpeg" alt="The Mother"></a>
+
+<a href="movie.html?id=13"><img src="images/images/movies13.jpeg" alt="Army of the Dead"></a>
+
+<a href="movie.html?id=14"><img src="images/images/movies14.jpeg" alt="Bird Box"></a>
+
+<a href="movie.html?id=17"><img src="images/images/movies17.jpeg" alt="Money Heist"></a>
+
+<a href="movie.html?id=18"><img src="images/images/movies18.jpeg" alt="Dark"></a>
+
+<a href="movie.html?id=19"><img src="images/images/movies19.jpeg" alt="All of Us Are Dead"></a>
+
+<a href="movie.html?id=20"><img src="images/images/movies20.jpeg" alt="Alice in Borderland"></a>
+
+</div>
+
+</section>
+
+<!-- Sci-Fi -->
+
+<section class="movies">
+
+<h2>🚀 Sci-Fi</h2>
+
+<div class="movie-row">
+
+<a href="movie.html?id=5"><img src="images/images/movies5.jpeg" alt="Stranger Things"></a>
+
+<a href="movie.html?id=6"><img src="images/images/movies6.jpeg" alt="The Adam Project"></a>
+
+<a href="movie.html?id=15"><img src="images/images/movies15.jpeg" alt="The Witcher"></a>
+
+<a href="movie.html?id=24"><img src="images/images/movies24.jpeg" alt="Interstellar"></a>
+
+<a href="movie.html?id=25"><img src="images/images/movies25.jpeg" alt="Inception"></a>
+
+<a href="movie.html?id=30"><img src="images/images/movies30.jpeg" alt="Dune"></a>
+
+</div>
+
+</section>
+
+<!-- Adventure -->
+
+<section class="movies">
+
+<h2>✈️ Adventure</h2>
+
+<div class="movie-row">
+
+<a href="movie.html?id=21"><img src="images/images/movies21.jpeg" alt="John Wick"></a>
+
+<a href="movie.html?id=22"><img src="images/images/movies22.jpeg" alt="Mission Impossible Fallout"></a>
+
+<a href="movie.html?id=23"><img src="images/images/movies23.jpeg" alt="Top Gun Maverick"></a>
+
+<a href="movie.html?id=24"><img src="images/images/movies24.jpeg" alt="Interstellar"></a>
+
+<a href="movie.html?id=30"><img src="images/images/movies30.jpeg" alt="Dune"></a>
+
+</div>
+
+</section>
+
+<!-- Superhero -->
+
+<section class="movies">
+
+<h2>🦸 Superhero</h2>
+
+<div class="movie-row">
+
+<a href="movie.html?id=26"><img src="images/images/movies26.jpeg" alt="The Batman"></a>
+
+<a href="movie.html?id=27"><img src="images/images/movies27.jpeg" alt="Avengers Endgame"></a>
+
+<a href="movie.html?id=28"><img src="images/images/movies28.jpeg" alt="Spider-Man No Way Home"></a>
+
+<a href="movie.html?id=29"><img src="images/images/movies29.jpeg" alt="Oppenheimer"></a>
+
+</div>
+
+</section>
+
+<!-- Trailer Popup -->
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">&times;</span>
+
+        <iframe
+            id="popupTrailer"
+            width="900"
+            height="500"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>NETFLIX</h2>
+
+        <p>Unlimited Movies, TV Shows and More.</p>
+
+        <div class="footer-links">
+
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Netflix  | Created by Mr_Aditya Budhwant
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="movies.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

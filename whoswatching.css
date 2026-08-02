@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    background:#141414;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:50px;
+}
+
+.profiles{
+    display:flex;
+    gap:90px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:8px;
+    cursor:pointer;
+    border:4px solid transparent;
+    transition:.3s;
+}
+
+.profile img:hover{
+    border:4px solid white;
+    transform:scale(1.05);
+}
+
+.profile p{
+    margin-top:12px;
+    font-size:24px;
+}
+
+#editName{
+    margin-top:50px;
+}
+
+#profileInput{
+    width:220px;
+    padding:10px;
+}
+
+#saveBtn{
+    padding:10px 20px;
+    background:#e50914;
+    color:white;
+    border:none;
+    cursor:pointer;
+}

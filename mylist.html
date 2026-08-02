@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background:#141414;color:white;font-family:Arial;">
+
+<h1 style="text-align:center;margin:30px;">🎬 My List</h1>
+
+<div id="list" class="movie-row"></div>
+
+<br>
+
+<div style="text-align:center;">
+    <a href="index.html">
+        <button>⬅ Back Home</button>
+    </a>
+</div>
+
+<script>
+
+// Login Protection
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+
+const myList = JSON.parse(localStorage.getItem("myList")) || [];
+
+const list = document.getElementById("list");
+
+if (myList.length === 0) {
+
+    list.innerHTML = "<h2>No Movies Added</h2>";
+
+} else {
+
+    myList.forEach(function(movie){
+
+        let id = 1;
+
+        if(movie==="Extraction") id=1;
+        else if(movie==="Extraction 2") id=2;
+        else if(movie==="Squid Game") id=3;
+        else if(movie==="Wednesday") id=4;
+        else if(movie==="Stranger Things") id=5;
+        else if(movie==="The Adam Project") id=6;
+
+        list.innerHTML += `
+            <a href="movie.html?id=${id}">
+                <div style="padding:15px;background:#222;border-radius:10px;margin:10px;">
+                    <h3>${movie}</h3>
+                </div>
+            </a>
+        `;
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
