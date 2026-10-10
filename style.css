@@ -638,3 +638,34 @@ to{
 .lang-btn:hover{
     background:#b20710;
 }
+.site-footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 35px 15px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.github-btn {
+  display: inline-block;
+  background: #e50914;
+  color: #fff;
+  padding: 12px 22px;
+  margin: 12px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: #b20710;
+  transform: scale(1.05);
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 18px;
+}
